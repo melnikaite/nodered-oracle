@@ -5,6 +5,7 @@ module.exports = function(RED) {
         node.on('input', function(msg) {
             msg.payload = msg.payload.toLowerCase();
             node.send(msg);
+            // this.send([ msg1 , msg2 ]);
         });
     }
     RED.nodes.registerType("etherium",EtheriumNode);

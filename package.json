@@ -11,8 +11,11 @@
     "url": "git+https://github.com/melnikaite/nodered-oracle.git"
   },
   "keywords": [],
-  "author": "melnikaite & preshetin",
-  "license": "ISC",
+  "author": {
+        "name": "Eugene Melnikov",
+        "email": "melnikaite.melnikaite@gmail.com"
+    },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/melnikaite/nodered-oracle/issues"
   },
@@ -21,5 +24,8 @@
       "ethereum": "ethereum.js"
     }
   },
-  "homepage": "https://github.com/melnikaite/nodered-oracle#readme"
+  "homepage": "https://github.com/melnikaite/nodered-oracle#readme",
+  "dependencies": {
+    "web3": "^1.0.0-beta.18"
+  }
 }

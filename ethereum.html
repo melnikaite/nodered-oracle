@@ -3,6 +3,7 @@
         category: 'function',
         color: '#a6bbcf',
         defaults: {
+            name: {value:""},
             address: {value:""},
             paritynode: {value:""},
             abi: {value:""},
@@ -12,19 +13,23 @@
         outputs:1,
         icon: "file.png",
         label: function() {
-            return this.address || "ethereum";
+            return this.name || "ethereum";
         }
     });
 </script>
 
 <script type="text/x-red" data-template-name="ethereum">
     <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
         <label for="node-input-address"><i class="icon-tag"></i> Contract Address</label>
         <input type="text" id="node-input-address" placeholder="Contract Address">
     </div>
     <div class="form-row">
-        <label for="node-input-paritynode"><i class="icon-tag"></i> Parity Node</label>
-        <input type="text" id="node-input-paritynode" placeholder="Parity Node">
+        <label for="node-input-host"><i class="icon-tag"></i> Host</label>
+        <input type="text" id="node-input-host" placeholder="Host">
     </div>
     <div class="form-row">
         <label for="node-input-abi"><i class="icon-tag"></i> ABI</label>

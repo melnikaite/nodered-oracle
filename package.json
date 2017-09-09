@@ -18,7 +18,7 @@
   },
   "node-red": {
     "nodes": {
-      "etherium": "etherium.js"
+      "ethereum": "ethereum.js"
     }
   },
   "homepage": "https://github.com/melnikaite/nodered-oracle#readme"

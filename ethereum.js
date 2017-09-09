@@ -1,5 +1,5 @@
 module.exports = function(RED) {
-    function EtheriumNode(config) {
+    function EthereumNode(config) {
         RED.nodes.createNode(this,config);
         var node = this;
         node.on('input', function(msg) {
@@ -8,5 +8,5 @@ module.exports = function(RED) {
             // this.send([ msg1 , msg2 ]);
         });
     }
-    RED.nodes.registerType("etherium",EtheriumNode);
+    RED.nodes.registerType("ethereum", EthereumNode);
 }

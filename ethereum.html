@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('etherium',{
+    RED.nodes.registerType('ethereum',{
         category: 'function',
         color: '#a6bbcf',
         defaults: {
@@ -12,12 +12,12 @@
         outputs:1,
         icon: "file.png",
         label: function() {
-            return this.address || "etherium";
+            return this.address || "ethereum";
         }
     });
 </script>
 
-<script type="text/x-red" data-template-name="etherium">
+<script type="text/x-red" data-template-name="ethereum">
     <div class="form-row">
         <label for="node-input-address"><i class="icon-tag"></i> Contract Address</label>
         <input type="text" id="node-input-address" placeholder="Contract Address">
@@ -36,6 +36,6 @@
     </div>
 </script>
 
-<script type="text/x-red" data-help-name="etherium">
-    <p>A humble Etherium node</p>
+<script type="text/x-red" data-help-name="ethereum">
+    <p>A humble Ethereum node</p>
 </script>

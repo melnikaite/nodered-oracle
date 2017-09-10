@@ -1,5 +1,5 @@
 {
-  "name": "node-red-node-golos",
+  "name": "node-red-contrib-golos",
   "version": "1.0.1",
   "description": "A Node-RED node for golos",
   "main": "index.js",

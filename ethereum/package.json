@@ -1,5 +1,5 @@
 {
-  "name": "node-red-node-ethereum",
+  "name": "node-red-contrib-ethereum",
   "version": "1.0.1",
   "description": "A Node-RED node for ethereum",
   "main": "index.js",

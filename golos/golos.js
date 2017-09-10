@@ -1,7 +1,7 @@
 module.exports = function(RED) {
   var util = require("util");
   var vm = require("vm");
-  const Web3 = require("web3");
+  var golos = require('golos-js');
 
   function sendResults(node,_msgid,msgs) {
       if (msgs == null) {
@@ -39,7 +39,7 @@ module.exports = function(RED) {
 
 
 
-    function EthereumNode(config) {
+    function GolosNode(config) {
         RED.nodes.createNode(this,config);
         var node = this;
 
@@ -179,18 +179,10 @@ module.exports = function(RED) {
             // console.log(functionText);
             this.on("input", function(msg) {
                 try {
-                  const web3 = new Web3(config.host);
-                  const contractInstance = new web3.eth.Contract(
-                    JSON.parse(config.abi),
-                    config.address
-                  );
-
                     context.msg = msg;
-                    context.msg.contractInstance = contractInstance;
+                    context.msg.golos = golos;
                     this.script.runInContext(context);
-                    sendResults(this,msg._msgid,context.results);
-
-
+                    sendResults(this, msg._msgid, context.results);
                 } catch(err) {
 
                     var line = 0;
@@ -223,5 +215,5 @@ module.exports = function(RED) {
             this.error(err);
         }
     }
-    RED.nodes.registerType("ethereum", EthereumNode);
+    RED.nodes.registerType("golos", GolosNode);
 }

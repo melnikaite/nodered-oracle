@@ -1,31 +1,31 @@
 {
-  "name": "nodered-oracle",
-  "version": "1.0.0",
-  "description": "Node RED Oracle",
+  "name": "node-red-node-golos",
+  "version": "1.0.1",
+  "description": "A Node-RED node for golos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/melnikaite/nodered-oracle.git"
+    "url": "https://github.com/melnikaite/nodered-oracle/tree/master/golos"
   },
   "keywords": [],
   "author": {
-        "name": "Eugene Melnikov",
-        "email": "melnikaite.melnikaite@gmail.com"
-    },
+    "name": "Eugene Melnikov",
+    "email": "melnikaite.melnikaite@gmail.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/melnikaite/nodered-oracle/issues"
   },
   "node-red": {
     "nodes": {
-      "ethereum": "ethereum.js"
+      "golos": "golos.js"
     }
   },
   "homepage": "https://github.com/melnikaite/nodered-oracle#readme",
   "dependencies": {
-    "web3": "^1.0.0-beta.18"
+    "golos-js": "^0.5.28"
   }
 }

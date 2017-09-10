@@ -1,0 +1,31 @@
+<script type="text/javascript">
+    RED.nodes.registerType('golos',{
+        category: 'function',
+        color: '#cfa8b0',
+        defaults: {
+            name: {value:""},
+            function: {value:""}
+        },
+        inputs:1,
+        outputs:1,
+        icon: "file.png",
+        label: function() {
+            return this.name || "golos";
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="golos">
+    <div class="form-row">
+        <label for="node-input-name"><i class="icon-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <label for="node-input-function"><i class="icon-tag"></i> Function</label>
+        <textarea rows="4" cols="60" id="node-input-function" placeholder="Put your code here..." style="width:100%;"></textarea>
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="golos">
+    <p>A Golos node</p>
+</script>

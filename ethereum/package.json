@@ -1,19 +1,19 @@
 {
-  "name": "nodered-oracle",
-  "version": "1.0.0",
-  "description": "Node RED Oracle",
+  "name": "node-red-contrib-ethereum",
+  "version": "1.0.1",
+  "description": "A Node-RED node for ethereum",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/melnikaite/nodered-oracle.git"
+    "url": "https://github.com/melnikaite/nodered-oracle/tree/master/ethereum"
   },
   "keywords": [],
   "author": {
-        "name": "Eugene Melnikov",
-        "email": "melnikaite.melnikaite@gmail.com"
+    "name": "Eugene Melnikov",
+    "email": "melnikaite.melnikaite@gmail.com"
     },
   "license": "MIT",
   "bugs": {

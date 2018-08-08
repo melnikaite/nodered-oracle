@@ -378,7 +378,7 @@
     "type": "golos",
     "z": "d863f3cc.f9f4f",
     "name": "from golos",
-    "function": "msg.golos.api.getContent('golosmedia', 'nauka0909', function(error, result) {\n  node.send({payload: result || error});\n});\n\nreturn;",
+    "function": "msg.golos.api.getContent('golosmedia', 'nauka0909').then(function(result){\n  node.send({payload: result});\n}).catch(function(error){\n  node.send({payload: error});\n});\n\nreturn;",
     "x": 353.00001525878906,
     "y": 324.00003147125244,
     "wires": [
